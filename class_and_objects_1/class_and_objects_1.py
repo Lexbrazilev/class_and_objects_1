@@ -11,7 +11,13 @@ class Cassa(object):
         
     def count_1000(self):
         c = self.cash // 1000
-        print(f"Осталось {c} тысяч")
+        x = " "
+        if c == 2 or c == 3 or c == 4:
+            x = "тысячи"
+        else:
+            x = "тысяч"
+            
+        print(f"Осталось {c} {x}")
 
     def take_away(self):
         x = int(input("Сколько хотите забрать из кассы: "))
